@@ -1,13 +1,19 @@
 import ProductItem from "@/components/ProductItem"
+import { Metadata } from "next";
 import Link from "next/link"
+
+export const metadata: Metadata = {
+  title: "SSR sahifasi :)❤️ ",
+  description: "Nimadir...",
+};
 
 const SSRpage = async () => {
   const res = await fetch("https://dummyjson.com/products", {cache: "no-store"})
   const data = await res.json()
 
   return (
-    <div className="p-5">
-      <h1 className="text-black font-semibold text-[60px] text-center mb-3">
+    <div className="p-5 containers">
+      <h1 className=" font-semibold text-[60px] text-center mb-3">
         SSR - Server Side Rendering
       </h1>
       <div className="flex gap-3 justify-center mb-2">

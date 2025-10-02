@@ -1,13 +1,20 @@
 import ProductItem from "@/components/ProductItem"
+import { Metadata } from "next"
 import Link from "next/link"
+
+export const metadata: Metadata = {
+  title: "ISR sahifasi :)❤️ ",
+  description: "Nimadir...",
+};
 
 const SSGpage = async () => {
   const res = await fetch("https://dummyjson.com/products", {next:{revalidate: 60}})
   const data = await res.json()
 
+
   return (
-    <div className="p-5">
-      <h1 className="text-black font-semibold text-[60px] text-center mb-3">
+    <div className="p-5 containers">
+      <h1 className=" font-semibold text-[60px] text-center mb-3">
         ISR - Incremental Static Regeneration
       </h1>
        <div className="flex gap-3 justify-center mb-2">

@@ -64,8 +64,8 @@ const CSRcontent = () => {
 
 
   return (
-    <div className="p-5">
-     <h1 className="text-black font-semibold text-[60px] text-center mb-3">CSR - Client Side Rendering</h1>
+    <div className="p-5 containers">
+     <h1 className=" font-semibold text-[60px] text-center mb-3">CSR - Client Side Rendering</h1>
       <div className="flex items-center justify-between mb-5">
        <div className="flex items-center gap-5">
         <input autoComplete="off" onChange={handleSearchFn} value={searchValue} className="w-[300px] p-2 rounded-md border-[1px]  outline-none " type="text" placeholder="Qidirish" name="search" />
